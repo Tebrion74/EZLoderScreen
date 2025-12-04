@@ -2,10 +2,18 @@ class CfgPatches
 {
 	class EZLoderScreen
 	{
-		requiredVersion=1;
+       // units[] = {
+       //     "TShirt_Blank",
+       //     "EZ_Tshirt_Dark"
+       // };
+        weapons[] = {};
+		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data"
+			"DZ_Data",
+            "DZ_Characters",
+            "DZ_Characters_Tops",
+            "DZ_Characters_Headgear"
 		};
 	};
 };
@@ -20,9 +28,9 @@ class CfgMods
 		hidePicture=1;
 		name="EZLoderScreen";
 		credits="The DayZ Community";
-		author="JosieG";
+		author="JosieG and LordSausageFinger";
 		authorID="0";
-		version="2.14";
+		version="3";
 		extra=0;
 		type="mod";
 		dependencies[]=
@@ -137,4 +145,46 @@ class CfgWorlds
     {
         cutscenes[] = {"TESTcutscene"};
     };    
+};
+class CfgVehicles
+{
+	class TShirt_ColorBase;
+
+	class EZ_Tshirt_Dark:TShirt_ColorBase
+	{
+		scope = 2;
+		displayName = "EZ TEE";
+		descriptionShort = "EZ Tees by LordSausageFinger";
+		weight = 32;
+		itemSize[] = {1,1};
+		itemsCargoSize[] = {10,10};
+		quickBarBonus = 6;
+		ragQuantity = 12;
+		varWetMax = 0;
+		repairCosts[] = {25,25};
+		hiddenSelectionsTextures[] =
+        {
+            "EZLoderScreen\data\tshirt_EZ_Dark_co.paa",
+            "EZLoderScreen\data\tshirt_EZ_Dark_co.paa",
+            "EZLoderScreen\data\tshirt_EZ_Dark_co.paa"
+        };
+	};
+   	class BaseballCap_ColorBase;
+
+	class EZ_Cap_Dark: BaseballCap_ColorBase
+	{
+		scope = 2;
+        displayName = "EZ Cap";
+		descriptionShort = "EZ Wear by LordSausageFinger";
+		weight = 32;
+		itemSize[] = {1,1};
+		hiddenSelectionsTextures[]=
+		{
+			"EZLoderScreen\data\EZCap_JeanDark_co.paa",
+			"EZLoderScreen\data\EZCap_JeanDark_co.paa",
+			"EZLoderScreen\data\EZCap_JeanDark_co.paa"
+		};
+	};
+
+
 };
