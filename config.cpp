@@ -61,31 +61,31 @@ class CfgSoundShaders
 	class EZ_Menu_Base_SoundShader
 	{
 		volume = 0.8;
-		range = 1;
+		// no 'range': 2D menu music; range=1 got the voice culled ~1 s after start
 	};
 	class EZ_Menu_Rot_SoundShader: EZ_Menu_Base_SoundShader
 	{
-		samples[] = {{"EZLoderScreen\OGG\Rot",1}};
+		samples[] = {{"\EZLoderScreen\OGG\Rot.ogg",1}};
 	};
 	class EZ_Menu_Poe_SoundShader: EZ_Menu_Base_SoundShader
 	{
-		samples[] = {{"EZLoderScreen\OGG\Poe",1}};
+		samples[] = {{"\EZLoderScreen\OGG\Poe.ogg",1}};
 	};
 	class EZ_Menu_Boogie_SoundShader: EZ_Menu_Base_SoundShader
 	{
-		samples[] = {{"EZLoderScreen\OGG\Boogie",1}};
+		samples[] = {{"\EZLoderScreen\OGG\Boogie.ogg",1}};
 	};
 	class EZ_Menu_Crypt_SoundShader: EZ_Menu_Base_SoundShader
 	{
-		samples[] = {{"EZLoderScreen\OGG\Crypt",1}};
+		samples[] = {{"\EZLoderScreen\OGG\Crypt.ogg",1}};
 	};
 	class EZ_Menu_Creep_SoundShader: EZ_Menu_Base_SoundShader
 	{
-		samples[] = {{"EZLoderScreen\OGG\Creep",1}};
+		samples[] = {{"\EZLoderScreen\OGG\Creep.ogg",1}};
 	};
 	class EZ_Menu_Morgue_SoundShader: EZ_Menu_Base_SoundShader
 	{
-		samples[] = {{"EZLoderScreen\OGG\Morgue",1}};
+		samples[] = {{"\EZLoderScreen\OGG\Morgue.ogg",1}};
 	};
 };
 class CfgSoundSets
