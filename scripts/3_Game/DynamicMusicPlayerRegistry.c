@@ -1,9 +1,13 @@
+// Verified against vanilla 1.30 scripts (diff.yadz.app, 3_Game/Systems/DynamicMusicPlayer):
+//   protected void RegisterTrackMenu(string soundSetName, bool hasPriority = false, int timeOfDay = DynamicMusicPlayerTimeOfDay.ANY)
+// hasPriority only matters for the first menu pick after the player is created
+// (SelectRandomTrackIndexFromCategoryPriorityFlagFirst); later picks are random with a history buffer.
+// DynamicMusicPlayerRegistryNasdara overrides RegisterTracksMenu() without calling super
+// (it registers Music_nasdara_menu_SoundSet), so modding only the base class does nothing on Nasdara.
+// Chernarus/Enoch/Sakhal registries do not override it.
 modded class DynamicMusicPlayerRegistry
 {
-	// 1.29+: RegisterTrackMenu(string soundSet, bool hasPriority = false, int timeOfDay = ANY).
-	// One SoundSet per track so the DynamicMusicPlayer random pick + history buffer works;
-	// all flagged hasPriority so priority-first selection always picks an EZ track.
-	protected override void RegisterTracksMenu()
+	protected void EZ_RegisterTracksMenu()
 	{
 		m_TracksMenu = new array<ref DynamicMusicTrackData>();
 
@@ -13,5 +17,18 @@ modded class DynamicMusicPlayerRegistry
 		RegisterTrackMenu("EZ_Menu_Crypt_SoundSet", true);
 		RegisterTrackMenu("EZ_Menu_Creep_SoundSet", true);
 		RegisterTrackMenu("EZ_Menu_Morgue_SoundSet", true);
+	}
+
+	override protected void RegisterTracksMenu()
+	{
+		EZ_RegisterTracksMenu();
+	}
+}
+
+modded class DynamicMusicPlayerRegistryNasdara
+{
+	override protected void RegisterTracksMenu()
+	{
+		EZ_RegisterTracksMenu();
 	}
 }
