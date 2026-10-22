@@ -13,7 +13,8 @@ class CfgPatches
 			"DZ_Data",
             "DZ_Characters",
             "DZ_Characters_Tops",
-            "DZ_Characters_Headgear"
+            "DZ_Characters_Headgear",
+            "DZ_Gear_Drinks"
 		};
 	};
 };
@@ -187,4 +188,17 @@ class CfgVehicles
 	};
 
 
+
+	class WaterBottle;
+	class EZ_WaterBottle: WaterBottle
+	{
+		scope = 2;
+		displayName = "EchelonZ Water Bottle";
+		descriptionShort = "Nasdara spring water. Hardcore hydration. Made by Echelon Publishers Group.";
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] =
+		{
+			"EZLoderScreen\data\ez_waterbottle_ca.paa"
+		};
+	};
 };
