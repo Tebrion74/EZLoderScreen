@@ -13,7 +13,9 @@ class CfgPatches
 			"DZ_Data",
             "DZ_Characters",
             "DZ_Characters_Tops",
-            "DZ_Characters_Headgear"
+            "DZ_Characters_Headgear",
+            "DZ_Scripts",
+            "DZ_Sounds_Effects"
 		};
 	};
 };
@@ -54,29 +56,71 @@ class CfgMods
 	};
 };
 
-class CfgSoundSets
-{
-	class Josies_Menu_SoundSet // do not change anything in this
-	{
-		soundShaders[] = {"Josies_Menu_Shader"};
-		volumeFactor = 1;
-		frequencyFactor = 1;
-		spatial = 0;
-	};
-};
 class CfgSoundShaders
 {
-	class Josies_Menu_Shader
+	class EZ_Menu_Base_SoundShader
 	{
-		samples[] = {
-					 {"\EZLoderScreen\OGG\Rot.ogg",1},
-					 {"\EZLoderScreen\OGG\Poe.ogg",2},
-					 {"\EZLoderScreen\OGG\Boogie.ogg",3},
-                     {"\EZLoderScreen\OGG\Crypt.ogg",4},
-					 {"\EZLoderScreen\OGG\Creep.ogg",5},
-					 {"\EZLoderScreen\OGG\Morgue.ogg",6}
-					}; 
-		volume = 0.8;  // volume of your music
+		volume = 0.8;
+		range = 1;
+	};
+	class EZ_Menu_Rot_SoundShader: EZ_Menu_Base_SoundShader
+	{
+		samples[] = {{"EZLoderScreen\OGG\Rot",1}};
+	};
+	class EZ_Menu_Poe_SoundShader: EZ_Menu_Base_SoundShader
+	{
+		samples[] = {{"EZLoderScreen\OGG\Poe",1}};
+	};
+	class EZ_Menu_Boogie_SoundShader: EZ_Menu_Base_SoundShader
+	{
+		samples[] = {{"EZLoderScreen\OGG\Boogie",1}};
+	};
+	class EZ_Menu_Crypt_SoundShader: EZ_Menu_Base_SoundShader
+	{
+		samples[] = {{"EZLoderScreen\OGG\Crypt",1}};
+	};
+	class EZ_Menu_Creep_SoundShader: EZ_Menu_Base_SoundShader
+	{
+		samples[] = {{"EZLoderScreen\OGG\Creep",1}};
+	};
+	class EZ_Menu_Morgue_SoundShader: EZ_Menu_Base_SoundShader
+	{
+		samples[] = {{"EZLoderScreen\OGG\Morgue",1}};
+	};
+};
+class CfgSoundSets
+{
+	class EZ_Menu_Base_SoundSet
+	{
+		spatial = 0;
+		loop = 0;
+		doppler = 0;
+		volumeFactor = 1;
+		frequencyFactor = 1;
+	};
+	class EZ_Menu_Rot_SoundSet: EZ_Menu_Base_SoundSet
+	{
+		soundShaders[] = {"EZ_Menu_Rot_SoundShader"};
+	};
+	class EZ_Menu_Poe_SoundSet: EZ_Menu_Base_SoundSet
+	{
+		soundShaders[] = {"EZ_Menu_Poe_SoundShader"};
+	};
+	class EZ_Menu_Boogie_SoundSet: EZ_Menu_Base_SoundSet
+	{
+		soundShaders[] = {"EZ_Menu_Boogie_SoundShader"};
+	};
+	class EZ_Menu_Crypt_SoundSet: EZ_Menu_Base_SoundSet
+	{
+		soundShaders[] = {"EZ_Menu_Crypt_SoundShader"};
+	};
+	class EZ_Menu_Creep_SoundSet: EZ_Menu_Base_SoundSet
+	{
+		soundShaders[] = {"EZ_Menu_Creep_SoundShader"};
+	};
+	class EZ_Menu_Morgue_SoundSet: EZ_Menu_Base_SoundSet
+	{
+		soundShaders[] = {"EZ_Menu_Morgue_SoundShader"};
 	};
 };
 class cfgCharacterScenes
