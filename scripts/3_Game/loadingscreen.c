@@ -1,13 +1,16 @@
 modded class LoadingScreen
 {
 	ref TStringArray RandomLoadingScreenArray = {
-		"EZLoderScreen\\data\\EchelonZ-1.edds",
-		"EZLoderScreen\\data\\EchelonZ-2.edds",
-		"EZLoderScreen\\data\\EchelonZ-3.edds",
-		"EZLoderScreen\\data\\EchelonZ-4.edds",
-		"EZLoderScreen\\data\\EchelonZ-5.edds",
-		"EZLoderScreen\\data\\EchelonZ-6.edds"
-
+		"EZLoderScreen\\data\\EchelonZ-Badlands-01.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-02.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-03.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-04.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-05.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-06.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-07.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-08.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-09.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-10.edds"
         };
 		
 	override void Show()
@@ -26,12 +29,16 @@ modded class LoadingScreen
 modded class LoginTimeBase extends UIScriptedMenu
 {
 	ref TStringArray RandomLoadingScreenArray = {
-		"EZLoderScreen\\data\\EchelonZ-1.edds",
-		"EZLoderScreen\\data\\EchelonZ-2.edds",
-		"EZLoderScreen\\data\\EchelonZ-3.edds",
-		"EZLoderScreen\\data\\EchelonZ-4.edds",
-		"EZLoderScreen\\data\\EchelonZ-5.edds",
-		"EZLoderScreen\\data\\EchelonZ-6.edds"
+		"EZLoderScreen\\data\\EchelonZ-Badlands-01.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-02.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-03.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-04.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-05.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-06.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-07.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-08.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-09.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-10.edds"
         };
 
     override void Show()
@@ -50,12 +57,16 @@ modded class LoginTimeBase extends UIScriptedMenu
 modded class LoginQueueBase extends UIScriptedMenu
 {
 	ref TStringArray RandomLoadingScreenArray = {
-		"EZLoderScreen\\data\\EchelonZ-1.edds",
-		"EZLoderScreen\\data\\EchelonZ-2.edds",
-		"EZLoderScreen\\data\\EchelonZ-3.edds",
-		"EZLoderScreen\\data\\EchelonZ-4.edds",
-		"EZLoderScreen\\data\\EchelonZ-5.edds",
-		"EZLoderScreen\\data\\EchelonZ-6.edds"
+		"EZLoderScreen\\data\\EchelonZ-Badlands-01.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-02.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-03.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-04.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-05.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-06.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-07.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-08.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-09.edds",
+		"EZLoderScreen\\data\\EchelonZ-Badlands-10.edds"
         };
 
     override void Show()

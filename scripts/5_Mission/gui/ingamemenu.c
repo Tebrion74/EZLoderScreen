@@ -31,7 +31,7 @@ modded class InGameMenu
                 // img.GetImageSet(0, setName, imageName);
 
                 // Swap to your EZ logo texture from your PBO
-                img.LoadImageFile(0, "EZLoderScreen/data/ez_logo_mainmenu.paa");
+                img.LoadImageFile(0, "EZLoderScreen/data/ez_logo_mainmenu.edds");
                 return; // stop after first image widget, which is usually the logo
             }
 
