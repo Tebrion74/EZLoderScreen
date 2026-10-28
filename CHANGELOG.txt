@@ -1,0 +1,21 @@
+# EZLoderScreen 9.7.0.EZTurbition (2026-10-28)
+
+- New EchelonZ main menu (overlay on top of the stock/Expansion menu; stock widgets hidden, not removed): 4 crossfading Badlands backgrounds with EchelonZ title art, Play EchelonZ (lobby -> direct connect 67.210.97.252:2303), Server Browser, Character, Settings, Discord, Exit.
+- News & Changelog panel, text driven by scripts/3_Game/EZ_MenuConfig.c.
+- Now-playing bar shows the current EZ menu track; NEXT skips to another menu track (no previous button: DMP history is private).
+- Lobby panel (Join / Back, Esc = Back) lives inside the main menu, so menu music keeps playing between menu and lobby.
+- In-game menu logo now found by widget name (dayz_logo), uses ez_logo_mainmenu.paa.
+
+# EZLoderScreen v4 - The Big Bang Rebuild (2026-10-27)
+
+Music by: Haunted Corpse (Free Music Archive) CC-BY-NC-ND
+
+- 27 new EchelonZ Badlands loading screens (random 1-27), also on login timer / queue screens.
+- Full CarPack repack included (credit: Starxick & camper10112). types.xml + Expansion market files shipped separately in server_files/ (not auto-applied).
+- New car flip (server-authoritative): hold F interact action ("Flip vehicle", 6 s) OR keybind F6 (look at car; optional confirm press; 4 s server delay, 10 s cooldown). Requires: engine off, no occupants, stopped (<1 m/s), tilted >~53 deg. Any CarScript vehicle (vanilla/CarPack/Expansion).
+- Holographic name tags (glow + flicker): admins pink #FF4FD8 map-wide only while admin mode is on (Ctrl+H, SteamIDs in HoloTags.json; orange #FF8C1A = change ColorAdmin); defender AI blue #3FA9FF; players green #3CFF6E; non-admin tags only when viewer AND target are inside a sanctuary, within MaxDistance (15 m). Config: $profile:EZLoderScreen/HoloTags.json, synced to clients by RPC.
+- Earplugs: N cycles game volume 100/50/25% (levels configurable), HUD indicator + notification.
+- Client settings menu ("EZLoderScreen settings" button in Options, or Ctrl+F6): tags on/off, admin tags, opacity, size, distance (capped by server), flicker, own tag, earplug levels, earplug HUD, flip confirm, sticky gag messages. Saved to client profile EZLoderScreen_client.json.
+- Keybinds in Controls under group "EZLoderScreen", all rebindable: Flip F6, Earplugs N, Settings Ctrl+F6, Admin holo Ctrl+H. inputs.xml validated as XML.
+- More sticky-hands gags (harmless, wash to clear): sticky handshake (20%/tick spreads within 2 m), sticky fingers (item into hands), ant parade (after 3 ticks), sticky trigger (on firing).
+- Signed with EPG key (was EZL).

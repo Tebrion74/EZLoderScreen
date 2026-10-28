@@ -1,44 +1,32 @@
+// EZLoderScreen - in-game (Esc) menu logo.
+// 9.7: logo found by widget name ("dayz_logo", used by vanilla day_z_ingamemenu.layout
+// and by Expansion's InGameMenu) instead of "first ImageWidget in the tree".
+// Re-applied on OnShow because Expansion reloads its logo when its settings sync.
 modded class InGameMenu
 {
-    override Widget Init()
-    {
-        // Call vanilla / Expansion’s original Init
-        layoutRoot = super.Init();
+	static const string EZ_INGAME_LOGO = "EZLoderScreen/data/ez_logo_mainmenu.paa";
 
-        // Try to find the existing logo widget and swap its image
-        ReplaceExpansionLogo(layoutRoot);
+	override Widget Init()
+	{
+		layoutRoot = super.Init();
+		EZ_ApplyLogo();
+		return layoutRoot;
+	}
 
-        return layoutRoot;
-    }
+	override void OnShow()
+	{
+		super.OnShow();
+		EZ_ApplyLogo();
+	}
 
-    void ReplaceExpansionLogo(Widget root)
-    {
-        if (!root)
-            return;
-
-        // Depth-first search through the widget tree
-        Widget w = root.GetChildren();
-        while (w)
-        {
-            ImageWidget img = ImageWidget.Cast(w);
-            if (img)
-            {
-                // If we can inspect the current image name, we could filter here.
-                // Some builds support these calls; if not, we just blunt-replace
-                // the first image we find.
-                // string setName;
-                // string imageName;
-                // img.GetImageSet(0, setName, imageName);
-
-                // Swap to your EZ logo texture from your PBO
-                img.LoadImageFile(0, "EZLoderScreen/data/ez_logo_mainmenu.edds");
-                return; // stop after first image widget, which is usually the logo
-            }
-
-            // Recurse into children
-            ReplaceExpansionLogo(w);
-
-            w = w.GetSibling();
-        }
-    }
+	protected void EZ_ApplyLogo()
+	{
+		if (!layoutRoot)
+			return;
+		ImageWidget logo = ImageWidget.Cast(layoutRoot.FindAnyWidget("dayz_logo"));
+		if (!logo)
+			return;
+		logo.LoadImageFile(0, EZ_INGAME_LOGO);
+		logo.SetImage(0);
+	}
 }

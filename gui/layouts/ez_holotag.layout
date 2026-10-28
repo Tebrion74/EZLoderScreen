@@ -1,0 +1,322 @@
+FrameWidgetClass EZHoloTag {
+ ignorepointer 1
+ position 0 0
+ size 400 120
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ priority 1
+ {
+ PanelWidgetClass Beam {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Ring {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass RingCore {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Plate {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass PlateGlow {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Scan0 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Scan1 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Scan2 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Scan3 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass EdgeT {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass EdgeB {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Br0 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Br1 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Br2 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Br3 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Br4 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Br5 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Br6 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Br7 {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ PanelWidgetClass Glitch {
+  ignorepointer 1
+  position 0 0
+  size 1 1
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  color 1 1 1 0
+  style rover_sim_colorable
+ }
+ TextWidgetClass Depth0 {
+  ignorepointer 1
+  position 0 0
+  size 400 30
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  text ""
+  font "gui/fonts/sdf_MetronBook24"
+  "exact text" 1
+  "exact text size" 18
+  "text halign" center
+  "text valign" center
+ }
+ TextWidgetClass Depth1 {
+  ignorepointer 1
+  position 0 0
+  size 400 30
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  text ""
+  font "gui/fonts/sdf_MetronBook24"
+  "exact text" 1
+  "exact text size" 18
+  "text halign" center
+  "text valign" center
+ }
+ TextWidgetClass Depth2 {
+  ignorepointer 1
+  position 0 0
+  size 400 30
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  text ""
+  font "gui/fonts/sdf_MetronBook24"
+  "exact text" 1
+  "exact text size" 18
+  "text halign" center
+  "text valign" center
+ }
+ TextWidgetClass ChromaC {
+  ignorepointer 1
+  position 0 0
+  size 400 30
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  text ""
+  font "gui/fonts/sdf_MetronBook24"
+  "exact text" 1
+  "exact text size" 18
+  "text halign" center
+  "text valign" center
+ }
+ TextWidgetClass ChromaM {
+  ignorepointer 1
+  position 0 0
+  size 400 30
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  text ""
+  font "gui/fonts/sdf_MetronBook24"
+  "exact text" 1
+  "exact text size" 18
+  "text halign" center
+  "text valign" center
+ }
+ TextWidgetClass Main {
+  ignorepointer 1
+  position 0 0
+  size 400 30
+  hexactpos 1
+  vexactpos 1
+  hexactsize 1
+  vexactsize 1
+  text ""
+  font "gui/fonts/sdf_MetronBook24"
+  "exact text" 1
+  "exact text size" 18
+  "text halign" center
+  "text valign" center
+ }
+ }
+}

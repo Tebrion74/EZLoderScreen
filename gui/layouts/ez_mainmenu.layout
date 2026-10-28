@@ -1,0 +1,666 @@
+FrameWidgetClass EZMenuRoot {
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 60
+ {
+  ImageWidgetClass EZBgA {
+   visible 1
+   ignorepointer 0
+   color 1 1 1 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   mode blend
+   "src alpha" 1
+   "stretch mode" stretch_w_h
+   nocache 1
+  }
+  ImageWidgetClass EZBgB {
+   visible 1
+   ignorepointer 0
+   color 1 1 1 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   mode blend
+   "src alpha" 1
+   "stretch mode" stretch_w_h
+   nocache 1
+  }
+  ImageWidgetClass EZLobbyBg {
+   visible 0
+   ignorepointer 0
+   color 1 1 1 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   mode blend
+   "src alpha" 1
+   "stretch mode" stretch_w_h
+   nocache 1
+  }
+  FrameWidgetClass EZMainPanel {
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    ButtonWidgetClass EZBtn_Play {
+     ignorepointer 0
+     color 0.62 0.08 0.07 0.92
+     position 0.0312 0.2611
+     size 0.2344 0.0833
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     "no focus" 1
+     {
+      TextWidgetClass EZBtn_Play_Lbl {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0.06 0.04
+       size 0.85 0.62
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "PLAY ECHELONZ"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 30
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass EZBtn_Play_Sub {
+       ignorepointer 1
+       color 0.85 0.8 0.75 0.9
+       position 0.06 0.62
+       size 0.9 0.32
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Direct connect - EchelonZ Badlands"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 15
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass EZBtn_Play_Arrow {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0.88 0
+       size 0.1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text ">"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 34
+       "text halign" left
+       "text valign" center
+      }
+     }
+    }
+    ButtonWidgetClass EZBtn_Browser {
+     ignorepointer 0
+     color 0 0 0 0
+     position 0.0312 0.3796
+     size 0.2344 0.0556
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     "no focus" 1
+     {
+      PanelWidgetClass EZBtn_Browser_Bar {
+       visible 1
+       ignorepointer 1
+       color 0.85 0.75 0.65 0.9
+       position 0 0.08
+       size 0.012 0.84
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+      }
+      TextWidgetClass EZBtn_Browser_Lbl {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0.06 0
+       size 0.85 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "SERVER BROWSER"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 30
+       "text halign" left
+       "text valign" center
+      }
+     }
+    }
+    ButtonWidgetClass EZBtn_Character {
+     ignorepointer 0
+     color 0 0 0 0
+     position 0.0312 0.4537
+     size 0.2344 0.0667
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     "no focus" 1
+     {
+      PanelWidgetClass EZBtn_Character_Bar {
+       visible 1
+       ignorepointer 1
+       color 0.85 0.75 0.65 0.9
+       position 0 0.08
+       size 0.012 0.84
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+      }
+      TextWidgetClass EZBtn_Character_Lbl {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0.06 0.04
+       size 0.85 0.62
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "CHARACTER"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 30
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass EZBtn_Character_Sub {
+       ignorepointer 1
+       color 0.85 0.8 0.75 0.9
+       position 0.06 0.62
+       size 0.9 0.32
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Customize your survivor"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 15
+       "text halign" left
+       "text valign" center
+      }
+     }
+    }
+    ButtonWidgetClass EZBtn_Settings {
+     ignorepointer 0
+     color 0 0 0 0
+     position 0.0312 0.5389
+     size 0.2344 0.0556
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     "no focus" 1
+     {
+      PanelWidgetClass EZBtn_Settings_Bar {
+       visible 1
+       ignorepointer 1
+       color 0.85 0.75 0.65 0.9
+       position 0 0.08
+       size 0.012 0.84
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+      }
+      TextWidgetClass EZBtn_Settings_Lbl {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0.06 0
+       size 0.85 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "SETTINGS"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 30
+       "text halign" left
+       "text valign" center
+      }
+     }
+    }
+    ButtonWidgetClass EZBtn_Discord {
+     ignorepointer 0
+     color 0 0 0 0
+     position 0.0312 0.613
+     size 0.2344 0.0667
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     "no focus" 1
+     {
+      PanelWidgetClass EZBtn_Discord_Bar {
+       visible 1
+       ignorepointer 1
+       color 0.85 0.75 0.65 0.9
+       position 0 0.08
+       size 0.012 0.84
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+      }
+      TextWidgetClass EZBtn_Discord_Lbl {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0.06 0.04
+       size 0.85 0.62
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "DISCORD"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 30
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass EZBtn_Discord_Sub {
+       ignorepointer 1
+       color 0.85 0.8 0.75 0.9
+       position 0.06 0.62
+       size 0.9 0.32
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "discord.gg/Es6czQ2KXm"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 15
+       "text halign" left
+       "text valign" center
+      }
+     }
+    }
+    ButtonWidgetClass EZBtn_Exit {
+     ignorepointer 0
+     color 0 0 0 0
+     position 0.0312 0.6981
+     size 0.2344 0.0556
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     "no focus" 1
+     {
+      PanelWidgetClass EZBtn_Exit_Bar {
+       visible 1
+       ignorepointer 1
+       color 0.85 0.75 0.65 0.9
+       position 0 0.08
+       size 0.012 0.84
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+      }
+      TextWidgetClass EZBtn_Exit_Lbl {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0.06 0
+       size 0.85 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "EXIT"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 30
+       "text halign" left
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass EZNewsPanel {
+     visible 1
+     ignorepointer 1
+     color 0.03 0.03 0.03 0.82
+     position 0.7396 0.0556
+     size 0.2292 0.5556
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     {
+      PanelWidgetClass EZNewsAccent {
+       visible 1
+       ignorepointer 1
+       color 0.75 0.1 0.08 1
+       position 0 0
+       size 1 0.006
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+      }
+      TextWidgetClass EZNewsTitle {
+       ignorepointer 1
+       color 0.9 0.22 0.18 1
+       position 0.05 0.02
+       size 0.9 0.07
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "NEWS & CHANGELOG"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 26
+       "text halign" left
+       "text valign" center
+      }
+      MultilineTextWidgetClass EZNewsText {
+       ignorepointer 1
+       color 0.92 0.9 0.86 1
+       position 0.05 0.11
+       size 0.9 0.86
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text ""
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 17
+       "text halign" left
+       "text valign" top
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass EZLobbyPanel {
+   visible 0
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    PanelWidgetClass EZLobbyBox {
+     visible 1
+     ignorepointer 1
+     color 0.03 0.03 0.03 0.84
+     position 0.0312 0.2315
+     size 0.3229 0.4815
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     {
+      PanelWidgetClass EZLobbyAccent {
+       visible 1
+       ignorepointer 1
+       color 0.75 0.1 0.08 1
+       position 0 0
+       size 1 0.006
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+      }
+      TextWidgetClass EZLobbyTitle {
+       ignorepointer 1
+       color 0.9 0.22 0.18 1
+       position 0.05 0.03
+       size 0.9 0.1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "JOIN ECHELONZ"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 34
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass EZLobbyServer {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0.05 0.15
+       size 0.9 0.07
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "EchelonZ Badlands"
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 24
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass EZLobbyAddr {
+       ignorepointer 1
+       color 0.85 0.8 0.75 1
+       position 0.05 0.23
+       size 0.9 0.06
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text ""
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 18
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass EZLobbyChar {
+       ignorepointer 1
+       color 0.85 0.8 0.75 1
+       position 0.05 0.31
+       size 0.9 0.06
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text ""
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 18
+       "text halign" left
+       "text valign" center
+      }
+      MultilineTextWidgetClass EZLobbyInfo {
+       ignorepointer 1
+       color 0.92 0.9 0.86 1
+       position 0.05 0.4
+       size 0.9 0.22
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Nasdara / Badlands - PvE sanctuaries, PvP everywhere else. Server rules and support on Discord."
+       font "gui/fonts/sdf_MetronBook24"
+       "exact text" 1
+       "exact text size" 17
+       "text halign" left
+       "text valign" top
+      }
+      ButtonWidgetClass EZBtn_LobbyJoin {
+       ignorepointer 0
+       color 0.62 0.08 0.07 0.92
+       position 0.05 0.66
+       size 0.9 0.15
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+       "no focus" 1
+       {
+        TextWidgetClass EZBtn_LobbyJoin_Lbl {
+         ignorepointer 1
+         color 1 1 1 1
+         position 0.06 0
+         size 0.85 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "JOIN SERVER"
+         font "gui/fonts/sdf_MetronBook24"
+         "exact text" 1
+         "exact text size" 30
+         "text halign" left
+         "text valign" center
+        }
+        TextWidgetClass EZBtn_LobbyJoin_Arrow {
+         ignorepointer 1
+         color 1 1 1 1
+         position 0.88 0
+         size 0.1 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text ">"
+         font "gui/fonts/sdf_MetronBook24"
+         "exact text" 1
+         "exact text size" 34
+         "text halign" left
+         "text valign" center
+        }
+       }
+      }
+      ButtonWidgetClass EZBtn_LobbyBack {
+       ignorepointer 0
+       color 0 0 0 0
+       position 0.05 0.84
+       size 0.9 0.12
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+       "no focus" 1
+       {
+        PanelWidgetClass EZBtn_LobbyBack_Bar {
+         visible 1
+         ignorepointer 1
+         color 0.85 0.75 0.65 0.9
+         position 0 0.08
+         size 0.012 0.84
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style rover_sim_colorable
+        }
+        TextWidgetClass EZBtn_LobbyBack_Lbl {
+         ignorepointer 1
+         color 1 1 1 1
+         position 0.06 0
+         size 0.85 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "BACK"
+         font "gui/fonts/sdf_MetronBook24"
+         "exact text" 1
+         "exact text size" 30
+         "text halign" left
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass EZBottomBar {
+   visible 1
+   ignorepointer 0
+   color 0.02 0.02 0.02 0.88
+   position 0 0.9306
+   size 1 0.0694
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style rover_sim_colorable
+   {
+    TextWidgetClass EZCredit {
+     ignorepointer 1
+     color 0.85 0.8 0.7 1
+     position 0.6 0
+     size 0.385 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text "A  LORDSAUSAGEFINGER  PRODUCTION"
+     font "gui/fonts/sdf_MetronBook24"
+     "exact text" 1
+     "exact text size" 16
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+ }
+}

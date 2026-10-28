@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modded_inputs>
+	<inputs>
+		<actions>
+			<input name="UAEZFlipVehicle" loc="Flip vehicle (look at it)" />
+			<input name="UAEZEarplugs" loc="Earplugs (cycle volume)" />
+			<input name="UAEZSettings" loc="EZLoderScreen settings" />
+			<input name="UAEZHoloAdmin" loc="Admin holo-tag toggle (admins only)" />
+		</actions>
+		<sorting name="ezloderscreen" loc="EZLoderScreen">
+			<input name="UAEZFlipVehicle" />
+			<input name="UAEZEarplugs" />
+			<input name="UAEZSettings" />
+			<input name="UAEZHoloAdmin" />
+		</sorting>
+	</inputs>
+	<preset>
+		<input name="UAEZFlipVehicle">
+			<btn name="kF6" />
+		</input>
+		<input name="UAEZEarplugs">
+			<btn name="kP" />
+		</input>
+		<input name="UAEZSettings">
+			<btn name="kF7" />
+		</input>
+		<input name="UAEZHoloAdmin">
+			<btn name="kF8" />
+		</input>
+	</preset>
+</modded_inputs>

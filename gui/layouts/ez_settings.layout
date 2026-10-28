@@ -1,0 +1,184 @@
+FrameWidgetClass EZSettingsRoot {
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass EZBg {
+   ignorepointer 1
+   color 0 0 0 0.85
+   position 0 0
+   size 560 516
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    TextWidgetClass EZTitle {
+     ignorepointer 1
+     position 0 10
+     size 560 34
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "EZLoderScreen - client settings"
+     font "gui/fonts/sdf_MetronBook24"
+     "exact text" 1
+     "exact text size" 22
+     "text halign" center
+     "text valign" center
+    }
+    ButtonWidgetClass EZBtn_ShowTags {
+     position 20 52
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "ShowTags"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_ShowAdminTags {
+     position 20 90
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "ShowAdminTags"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_TagOpacity {
+     position 20 128
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "TagOpacity"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_TagSize {
+     position 20 166
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "TagSize"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_TagDistance {
+     position 20 204
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "TagDistance"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_TagFlicker {
+     position 20 242
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "TagFlicker"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_ShowOwnTag {
+     position 20 280
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "ShowOwnTag"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_Earplugs {
+     position 20 318
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "Earplugs"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_EarplugHud {
+     position 20 356
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "EarplugHud"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_FlipConfirm {
+     position 20 394
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "FlipConfirm"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_StickyGag {
+     position 20 432
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "StickyGag"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+    ButtonWidgetClass EZBtn_Close {
+     position 20 470
+     size 520 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     color 0.2 0.6 1 0.35
+     text "Close"
+     font "gui/fonts/sdf_MetronBook24"
+     "text size" 16
+    }
+   }
+  }
+ }
+}
