@@ -170,7 +170,7 @@ class CfgVehicles {
         descriptionShort = "EZ Wear by LordSausageFinger. Knee-length, never wet, pockets for days.";
         weight = 32;
         itemSize[] = {1, 1};
-        itemsCargoSize[] = {10, 10};
+        itemsCargoSize[] = {10, 12};
         quickBarBonus = 6;
         ragQuantity = 12;
         varWetMax = 0;

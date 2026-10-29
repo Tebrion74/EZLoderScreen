@@ -1,3 +1,8 @@
+# EZLoderScreen 9.9.0.1 - almost there with robes on (2026-10-29)
+
+- EZ_Kameez cargo raised from 10x10 to 10x12 so builders can carry more for the Nailed It quest line (fix by ClearcREEk).
+- EZ_Kameez textures rebuilt on the real vanilla kameez UV layout: large tone-on-tone camo EZ logo centred high on the chest and on the back, no longer hidden by straps or hip packs. Red hem trim removed.
+
 # EZLoderScreen 9.9 - almost there with robes on (2026-10-29)
 
 - New EZ_Kameez: EZ-branded knee-length tunic on vanilla KameezShirt_ColorBase, replaces the EZ tee. Same perks: 10x10 cargo, never wet, quickbar +6, 12 rags, repair 25/25. EZ logo front and back, red EZ hem trim.
