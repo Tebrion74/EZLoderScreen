@@ -17,7 +17,7 @@ class CfgMods {
         credits = "JosieG, LordSausageFinger; CarPack by Starxick & camper10112; Music by: Haunted Corpse (Free Music Archive) CC-BY-NC-ND";
         author = "JosieG and LordSausageFinger";
         authorID = "0";
-        version = "9.8.9";
+        version = "9.9";
         inputs = "EZLoderScreen/data/inputs.xml";
         extra = 0;
         type = "mod";
@@ -162,7 +162,7 @@ class CfgVehicles {
         repairCosts[] = {25, 25};
         hiddenSelectionsTextures[] = {"EZLoderScreen\data\tshirt_EZ_Dark_co.paa", "EZLoderScreen\data\tshirt_EZ_Dark_co.paa", "EZLoderScreen\data\tshirt_EZ_Dark_co.paa"};
     };
-    // 9.8.9: EZ_Kameez replaces EZ_Tshirt_Dark (tee kept defined for one wipe so stashed tees do not error).
+    // 9.9: EZ_Kameez replaces EZ_Tshirt_Dark (tee kept defined for one wipe so stashed tees do not error).
     class KameezShirt_ColorBase;
     class EZ_Kameez: KameezShirt_ColorBase {
         scope = 2;
