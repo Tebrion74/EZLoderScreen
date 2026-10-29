@@ -176,7 +176,7 @@ class CfgVehicles {
         varWetMax = 0;
         repairCosts[] = {25, 25};
         // order assumed camoGround, camoMale, camoFemale (same as vanilla _ColorBase tops) - verify
-        hiddenSelectionsTextures[] = {"EZLoderScreen\data\EZKameez_g_Dark_co.paa", "EZLoderScreen\data\EZKameez_Dark_co.paa", "EZLoderScreen\data\EZKameez_Dark_co.paa"};
+        hiddenSelectionsTextures[] = {"EZLoderScreen\data\kameez_EZ_Dark_g_co.paa", "EZLoderScreen\data\kameez_EZ_Dark_co.paa", "EZLoderScreen\data\kameez_EZ_Dark_co.paa"};
     };
     class BaseballCap_ColorBase;
     class EZ_Cap_Dark: BaseballCap_ColorBase {
