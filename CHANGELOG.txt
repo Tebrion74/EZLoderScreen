@@ -1,3 +1,7 @@
+# EZLoderScreen 9.8.2.EZTerje (2026-10-28)
+
+- First person only outside the 6 PvE sanctuaries; drivers keep third person (EZ_FirstPersonZones).
+
 # EZLoderScreen 9.8.1.EZTerje (2026-10-28)
 
 - EZ Terje field medical manual book (EZ_TerjeMedManual, 19 pages), spawns in freshie hands: a freshie manual to help you not fucking die of subsequent dangerz of not-so-EZ-Land.

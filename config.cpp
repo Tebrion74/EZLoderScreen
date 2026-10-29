@@ -17,7 +17,7 @@ class CfgMods {
         credits = "JosieG, LordSausageFinger; CarPack by Starxick & camper10112; Music by: Haunted Corpse (Free Music Archive) CC-BY-NC-ND";
         author = "JosieG and LordSausageFinger";
         authorID = "0";
-        version = "9.8.1.EZTerje";
+        version = "9.8.2.EZTerje";
         inputs = "EZLoderScreen/data/inputs.xml";
         extra = 0;
         type = "mod";
