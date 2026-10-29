@@ -1,3 +1,9 @@
+# EZLoderScreen 9.8.9 (2026-10-29)
+
+- New EZ_Kameez: EZ-branded knee-length tunic on vanilla KameezShirt_ColorBase, replaces the EZ tee. Same perks: 10x10 cargo, never wet, quickbar +6, 12 rags, repair 25/25. EZ logo front and back, red EZ hem trim.
+- EZ_Tshirt_Dark stays defined for one wipe (off market, nominal 0) so stashed tees do not error.
+- Server side (not in mod): EZ wear is buy-only at traders.
+
 # EZLoderScreen 9.8.2.EZTerje (2026-10-28)
 
 - First person only outside the 6 PvE sanctuaries; drivers keep third person (EZ_FirstPersonZones).

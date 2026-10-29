@@ -1,9 +1,9 @@
 class CfgPatches {
     class EZLoderScreen {
-        units[] = {"EZ_PineappleSeeds", "EZ_PineappleSeedsPack", "EZ_Pineapple", "EZ_PineappleSlice", "EZ_TerjeMedManual"};
+        units[] = {"EZ_PineappleSeeds", "EZ_PineappleSeedsPack", "EZ_Pineapple", "EZ_PineappleSlice", "EZ_TerjeMedManual", "EZ_Kameez"};
         weapons[] = {};
         requiredVersion = 0.1;
-        requiredAddons[] = {"DZ_Data", "DZ_Characters", "DZ_Characters_Tops", "DZ_Characters_Headgear", "DZ_Characters_Nasdara_Headgear", "DZ_Scripts", "DZ_Sounds_Effects", "DZ_Gear_Food", "DZ_Gear_Cultivation", "DZ_Gear_Books", "DayZExpansion_Chat_Scripts", "DayZExpansion_Chat_GUI"};
+        requiredAddons[] = {"DZ_Data", "DZ_Characters", "DZ_Characters_Tops", "DZ_Characters_Headgear", "DZ_Characters_Nasdara_Headgear", /* TODO verify in DayZ Tools: add the Nasdara tops CfgPatches name here if KameezShirt_ColorBase is not in DZ_Characters_Tops */ "DZ_Scripts", "DZ_Sounds_Effects", "DZ_Gear_Food", "DZ_Gear_Cultivation", "DZ_Gear_Books", "DayZExpansion_Chat_Scripts", "DayZExpansion_Chat_GUI"};
     };
 };
 class CfgMods {
@@ -17,7 +17,7 @@ class CfgMods {
         credits = "JosieG, LordSausageFinger; CarPack by Starxick & camper10112; Music by: Haunted Corpse (Free Music Archive) CC-BY-NC-ND";
         author = "JosieG and LordSausageFinger";
         authorID = "0";
-        version = "9.8.2.EZTerje";
+        version = "9.8.9";
         inputs = "EZLoderScreen/data/inputs.xml";
         extra = 0;
         type = "mod";
@@ -161,6 +161,22 @@ class CfgVehicles {
         varWetMax = 0;
         repairCosts[] = {25, 25};
         hiddenSelectionsTextures[] = {"EZLoderScreen\data\tshirt_EZ_Dark_co.paa", "EZLoderScreen\data\tshirt_EZ_Dark_co.paa", "EZLoderScreen\data\tshirt_EZ_Dark_co.paa"};
+    };
+    // 9.8.9: EZ_Kameez replaces EZ_Tshirt_Dark (tee kept defined for one wipe so stashed tees do not error).
+    class KameezShirt_ColorBase;
+    class EZ_Kameez: KameezShirt_ColorBase {
+        scope = 2;
+        displayName = "EZ Kameez";
+        descriptionShort = "EZ Wear by LordSausageFinger. Knee-length, never wet, pockets for days.";
+        weight = 32;
+        itemSize[] = {1, 1};
+        itemsCargoSize[] = {10, 10};
+        quickBarBonus = 6;
+        ragQuantity = 12;
+        varWetMax = 0;
+        repairCosts[] = {25, 25};
+        // order assumed camoGround, camoMale, camoFemale (same as vanilla _ColorBase tops) - verify
+        hiddenSelectionsTextures[] = {"EZLoderScreen\data\EZKameez_g_Dark_co.paa", "EZLoderScreen\data\EZKameez_Dark_co.paa", "EZLoderScreen\data\EZKameez_Dark_co.paa"};
     };
     class BaseballCap_ColorBase;
     class EZ_Cap_Dark: BaseballCap_ColorBase {
