@@ -1,9 +1,9 @@
 class CfgPatches {
     class EZLoderScreen {
-        units[] = {"EZ_PineappleSeeds", "EZ_PineappleSeedsPack", "EZ_Pineapple", "EZ_PineappleSlice"};
+        units[] = {"EZ_PineappleSeeds", "EZ_PineappleSeedsPack", "EZ_Pineapple", "EZ_PineappleSlice", "EZ_TerjeMedManual"};
         weapons[] = {};
         requiredVersion = 0.1;
-        requiredAddons[] = {"DZ_Data", "DZ_Characters", "DZ_Characters_Tops", "DZ_Characters_Headgear", "DZ_Characters_Nasdara_Headgear", "DZ_Scripts", "DZ_Sounds_Effects", "DZ_Gear_Food", "DZ_Gear_Cultivation"};
+        requiredAddons[] = {"DZ_Data", "DZ_Characters", "DZ_Characters_Tops", "DZ_Characters_Headgear", "DZ_Characters_Nasdara_Headgear", "DZ_Scripts", "DZ_Sounds_Effects", "DZ_Gear_Food", "DZ_Gear_Cultivation", "DZ_Gear_Books", "DayZExpansion_Chat_Scripts", "DayZExpansion_Chat_GUI"};
     };
 };
 class CfgMods {
@@ -17,7 +17,7 @@ class CfgMods {
         credits = "JosieG, LordSausageFinger; CarPack by Starxick & camper10112; Music by: Haunted Corpse (Free Music Archive) CC-BY-NC-ND";
         author = "JosieG and LordSausageFinger";
         authorID = "0";
-        version = "9.7.3.EZTurbition";
+        version = "9.8.1.EZTerje";
         inputs = "EZLoderScreen/data/inputs.xml";
         extra = 0;
         type = "mod";
@@ -371,6 +371,25 @@ class CfgVehicles {
                 };
             };
             class FoodStageTransitions: FruitStageTransitions {};
+        };
+    };
+    class EZ_TerjeMedManual: Inventory_Base {
+        scope = 2;
+        displayName = "Terje Field Medical Manual";
+        descriptionShort = "A dog-eared field medic's handbook covering wounds, bleeding, surgery, infections, poisoning, pain and the zombie virus, with the medicine to use for each. Hold it and read it.";
+        model = "\dz\gear\books\Book_kniga.p3d";
+        rotationFlags = 1;
+        weight = 300;
+        itemSize[] = {2, 2};
+        absorbency = 1;
+        varWetMax = 1;
+        class DamageSystem {
+            class GlobalHealth {
+                class Health {
+                    hitpoints = 100;
+                    healthLevels[] = {{1.0, {"DZ\gear\books\Data\book.rvmat"}}, {0.7, {"DZ\gear\books\Data\book.rvmat"}}, {0.5, {"DZ\gear\books\Data\book_damage.rvmat"}}, {0.3, {"DZ\gear\books\Data\book_damage.rvmat"}}, {0.0, {"DZ\gear\books\Data\book_destruct.rvmat"}}};
+                };
+            };
         };
     };
 };
