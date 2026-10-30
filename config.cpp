@@ -1,9 +1,9 @@
 class CfgPatches {
     class EZLoderScreen {
-        units[] = {"EZ_PineappleSeeds", "EZ_PineappleSeedsPack", "EZ_Pineapple", "EZ_PineappleSlice", "EZ_TerjeMedManual", "EZ_Kameez"};
+        units[] = {"EZ_PineappleSeeds", "EZ_PineappleSeedsPack", "EZ_Pineapple", "EZ_PineappleSlice", "EZ_TerjeMedManual", "EZ_Kameez", "EZ_BallisticHelmet", "EZ_Mich2001Helmet", "EZ_GorkaHelmet", "EZ_PlateCarrierVest", "EZ_PlateCarrierHolster", "EZ_SmershVest", "EZ_TacticalGloves", "EZ_MilitaryBelt", "EZ_Balaclava3Holes", "EZ_TacticalShirt", "EZ_BDUPants"};
         weapons[] = {};
         requiredVersion = 0.1;
-        requiredAddons[] = {"DZ_Data", "DZ_Characters", "DZ_Characters_Tops", "DZ_Characters_Headgear", "DZ_Characters_Nasdara_Headgear", /* TODO verify in DayZ Tools: add the Nasdara tops CfgPatches name here if KameezShirt_ColorBase is not in DZ_Characters_Tops */ "DZ_Scripts", "DZ_Sounds_Effects", "DZ_Gear_Food", "DZ_Gear_Cultivation", "DZ_Gear_Books", "DayZExpansion_Chat_Scripts", "DayZExpansion_Chat_GUI"};
+        requiredAddons[] = {"DZ_Data", "DZ_Characters", "DZ_Characters_Tops", "DZ_Characters_Headgear", "DZ_Characters_Vests", "DZ_Characters_Gloves", "DZ_Characters_Belts", "DZ_Characters_Masks", "DZ_Characters_Pants", "DZ_Characters_Nasdara_Headgear", /* TODO verify in DayZ Tools: add the Nasdara tops CfgPatches name here if KameezShirt_ColorBase is not in DZ_Characters_Tops */ "DZ_Scripts", "DZ_Sounds_Effects", "DZ_Gear_Food", "DZ_Gear_Cultivation", "DZ_Gear_Books", "DayZExpansion_Chat_Scripts", "DayZExpansion_Chat_GUI"};
     };
 };
 class CfgMods {
@@ -177,6 +177,91 @@ class CfgVehicles {
         repairCosts[] = {25, 25};
         // order assumed camoGround, camoMale, camoFemale (same as vanilla _ColorBase tops) - verify
         hiddenSelectionsTextures[] = {"EZLoderScreen\data\kameez_EZ_Dark_g_co.paa", "EZLoderScreen\data\kameez_EZ_Dark_co.paa", "EZLoderScreen\data\kameez_EZ_Dark_co.paa"};
+    };
+    // 9.9: EZ tactical wave 1 (helmets). Texture-only reskins; armour/cargo stay vanilla. Logo UV placement unverified in-game.
+    class BallisticHelmet_ColorBase;
+    class EZ_BallisticHelmet: BallisticHelmet_ColorBase {
+        scope = 2;
+        displayName = "EZ Ballistic Helmet";
+        descriptionShort = "EZ Wear by LordSausageFinger. Dark shell, same vanilla protection.";
+        // base material = HelmetMich.rvmat (Green/Black/UN set), inherited from ColorBase
+        hiddenSelectionsTextures[] = {"EZLoderScreen\data\ez_ballistichelmet_co.paa", "EZLoderScreen\data\ez_ballistichelmet_co.paa", "EZLoderScreen\data\ez_ballistichelmet_co.paa"};
+    };
+    class Mich2001Helmet;
+    class EZ_Mich2001Helmet: Mich2001Helmet {
+        scope = 2;
+        displayName = "EZ MICH 2001 Helmet";
+        descriptionShort = "EZ Wear by LordSausageFinger. Rails stay vanilla (separate material).";
+        hiddenSelectionsTextures[] = {"EZLoderScreen\data\ez_mich2001helmet_co.paa", "EZLoderScreen\data\ez_mich2001helmet_co.paa", "EZLoderScreen\data\ez_mich2001helmet_co.paa"};
+    };
+    class GorkaHelmet;
+    class EZ_GorkaHelmet: GorkaHelmet {
+        scope = 2;
+        displayName = "EZ Gorka Helmet";
+        descriptionShort = "EZ Wear by LordSausageFinger. Visor glass stays vanilla.";
+        hiddenSelectionsTextures[] = {"EZLoderScreen\data\ez_gorkahelmet_co.paa", "EZLoderScreen\data\ez_gorkahelmet_co.paa", "EZLoderScreen\data\ez_gorkahelmet_co.paa"};
+    };
+    // 9.9: EZ tactical wave 2 (vests/gloves/belt/mask/shirt/pants). Texture-only reskins built from the REAL vanilla _co
+    // (tools/make_gear.py). Bases/selections verified against vanilla config.bin (debinarized). Armour/cargo stay vanilla.
+    class PlateCarrierVest_Black;
+    class PlateCarrierHolster_Black;
+    class SmershVest;
+    class TacticalGloves_Black;
+    class MilitaryBelt;
+    class Balaclava3Holes_Black;
+    class TacticalShirt_Black;
+    class BDUPants;
+    class EZ_PlateCarrierVest: PlateCarrierVest_Black {
+        scope = 2;
+        displayName = "EZ Plate Carrier";
+        descriptionShort = "EZ Wear by LordSausageFinger. Dark finish, same vanilla protection.";
+        // selections camoGround/Male/Female live on the colour leaves, not on PlateCarrierVest itself
+        hiddenSelectionsTextures[] = {"EZLoderScreen\\data\\ez_platecarrier_co.paa", "EZLoderScreen\\data\\ez_platecarrier_co.paa", "EZLoderScreen\\data\\ez_platecarrier_co.paa"};
+    };
+    class EZ_PlateCarrierHolster: PlateCarrierHolster_Black {
+        scope = 2;
+        displayName = "EZ Plate Carrier Holster";
+        descriptionShort = "EZ Wear by LordSausageFinger. Matches the EZ plate carrier.";
+        // vanilla: hiddenSelections[] = {"camoGround"} only (3 textures listed, like vanilla)
+        hiddenSelectionsTextures[] = {"EZLoderScreen\\data\\ez_platecarrier_co.paa", "EZLoderScreen\\data\\ez_platecarrier_co.paa", "EZLoderScreen\\data\\ez_platecarrier_co.paa"};
+    };
+    class EZ_SmershVest: SmershVest {
+        scope = 2;
+        displayName = "EZ Smersh Vest";
+        descriptionShort = "EZ Wear by LordSausageFinger. Dark finish, same vanilla cargo.";
+        hiddenSelectionsTextures[] = {"EZLoderScreen\\data\\ez_smersh_g_co.paa", "EZLoderScreen\\data\\ez_smersh_co.paa", "EZLoderScreen\\data\\ez_smersh_co.paa"};
+    };
+    class EZ_TacticalGloves: TacticalGloves_Black {
+        scope = 2;
+        displayName = "EZ Tactical Gloves";
+        descriptionShort = "EZ Wear by LordSausageFinger. Dark finish.";
+        // 4th selection "personality" left vanilla, as on TacticalGloves_Black
+        hiddenSelectionsTextures[] = {"EZLoderScreen\\data\\ez_tacticalgloves_co.paa", "EZLoderScreen\\data\\ez_tacticalgloves_co.paa", "EZLoderScreen\\data\\ez_tacticalgloves_co.paa"};
+    };
+    class EZ_MilitaryBelt: MilitaryBelt {
+        scope = 2;
+        displayName = "EZ Military Belt";
+        descriptionShort = "EZ Wear by LordSausageFinger. Dark webbing.";
+        // TODO verify in-game: vanilla uses a procedural colour here; this _co is built on mil_belt_ca.paa (the rvmat texture)
+        hiddenSelectionsTextures[] = {"EZLoderScreen\\data\\ez_militarybelt_co.paa", "EZLoderScreen\\data\\ez_militarybelt_co.paa", "EZLoderScreen\\data\\ez_militarybelt_co.paa"};
+    };
+    class EZ_Balaclava3Holes: Balaclava3Holes_Black {
+        scope = 2;
+        displayName = "EZ Balaclava";
+        descriptionShort = "EZ Wear by LordSausageFinger. Dark knit.";
+        hiddenSelectionsTextures[] = {"EZLoderScreen\\data\\ez_balaclava3holes_co.paa", "EZLoderScreen\\data\\ez_balaclava3holes_co.paa", "EZLoderScreen\\data\\ez_balaclava3holes_co.paa"};
+    };
+    class EZ_TacticalShirt: TacticalShirt_Black {
+        scope = 2;
+        displayName = "EZ Tactical Shirt";
+        descriptionShort = "EZ Wear by LordSausageFinger. Dark finish, same vanilla cargo.";
+        hiddenSelectionsTextures[] = {"EZLoderScreen\\data\\ez_tacticalshirt_ground_co.paa", "EZLoderScreen\\data\\ez_tacticalshirt_co.paa", "EZLoderScreen\\data\\ez_tacticalshirt_co.paa"};
+    };
+    class EZ_BDUPants: BDUPants {
+        scope = 2;
+        displayName = "EZ BDU Pants";
+        descriptionShort = "EZ Wear by LordSausageFinger. Dark woodland, same vanilla cargo.";
+        hiddenSelectionsTextures[] = {"EZLoderScreen\\data\\ez_bdupants_co.paa", "EZLoderScreen\\data\\ez_bdupants_co.paa", "EZLoderScreen\\data\\ez_bdupants_co.paa"};
     };
     class BaseballCap_ColorBase;
     class EZ_Cap_Dark: BaseballCap_ColorBase {

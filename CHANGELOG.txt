@@ -1,3 +1,9 @@
+# EZLoderScreen - Unreleased (next version)
+
+- New EZ tactical helmets: EZ_BallisticHelmet, EZ_Mich2001Helmet and EZ_GorkaHelmet in dark EZ finish with a tone-on-tone EZ logo (EZ tactical gear set by ClearcREEk). Vanilla protection unchanged.
+- New EZ tactical gear (wave 2): EZ_PlateCarrierVest + EZ_PlateCarrierHolster, EZ_SmershVest, EZ_TacticalGloves, EZ_MilitaryBelt, EZ_Balaclava3Holes, EZ_TacticalShirt and EZ_BDUPants in dark EZ finish with the same tone-on-tone EZ logo, built on the real vanilla textures. Helmet textures rebuilt on the real vanilla textures too. Vanilla protection and cargo unchanged.
+- EZ tactical logos made stronger (lighter tint of the base colour with a thin dark edge, ~7-9% of texture width) after feedback. Tactical gear set credit: ClearcREEk.
+
 # EZLoderScreen 9.9.0.1 - almost there with robes on (2026-10-29)
 
 - EZ_Kameez cargo raised from 10x10 to 10x12 so builders can carry more for the Nailed It quest line (fix by ClearcREEk).
